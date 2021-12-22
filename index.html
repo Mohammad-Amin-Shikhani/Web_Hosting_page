@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gary simon</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+     <div class="container">
+        <header>
+            <img src="images/logo.svg" alt="26andfour" class="logo">
+
+            <nav>
+                <a href="#" class="hide-dsektop">
+                    <img src="images/ham.svg" alt="toggle menu" class="menu hide-desktop" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile " id="nav">
+                    <li><img src="images/exit.svg" alt="exit menu" id="exit" class="exit-btn hide-desktop"></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <img src="images/server.svg" alt="server graphic" class="server">
+
+            <h1>Web Hosting for the Modern Era</h1>
+            <p class="subhead">Go serverless and pay only for what you use.</p>
+            <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/icon-1.svg" alt="calender icon">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                </li>
+                <li>
+                    <img src="images/icon-2.svg" alt="calender icon">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                </li>
+                <li>
+                    <img src="images/icon-3.svg" alt="calender icon">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="grey-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/user1.png" alt="user one">
+                        <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
+                        <figcaption>- jane doe</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/user2.png" alt="user two">
+                        <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
+                        <figcaption>- jane doe</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Start your free trail now!</h2>
+        <a href="#" class="cta">Get Started</a>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="images/logo-white.svg" alt="logo" class="logo">
+                </a>
+                    <p class="address">blasewitzer Ring 10  <br>13593 Berlin</p>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of services</a></li>
+                        <li><a href="#">PRivacy Policy</a></li>
+                    </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var menu = document.getElementById("menu");
+        var nav = document.getElementById("nav");
+        var exit = document.getElementById("exit");
+        menu.addEventListener("click", function(e){
+            nav.classList.toggle("hide-mobile");
+            e.preventDefault();
+        });
+        exit.addEventListener("click", function(e){
+            nav.classList.add("hide-mobile");
+            e.preventDefault();
+        });
+        
+
+    </script>
+</body>
+</html>
